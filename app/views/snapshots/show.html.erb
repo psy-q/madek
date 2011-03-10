@@ -13,13 +13,13 @@
 		<%= content_tag :div, :id => "detail-action-bar", :style => "padding-top: 1.5em;" do
 			content_tag :ul do
 				a = content_tag :li do
-					link_to _("XML exportieren"), snapshot_path(@snapshot, :format => :tms), :style => "line-height: 1.1em; float: none; padding: 0.5em; font-size: 0.9em;"
+					link_to _("Export XML"), snapshot_path(@snapshot, :format => :tms), :style => "line-height: 1.1em; float: none; padding: 0.5em; font-size: 0.9em;"
 				end
 				a += content_tag :li do
-					link_to _("ZIP exportieren"), export_snapshots_path(:snapshot_ids => [@snapshot]), :style => "line-height: 1.1em; float: none; padding: 0.5em; font-size: 0.9em;"
+					link_to _("Export ZIP"), export_snapshots_path(:snapshot_ids => [@snapshot]), :style => "line-height: 1.1em; float: none; padding: 0.5em; font-size: 0.9em;"
 				end
 				a += content_tag :li do
-					link_to _("MIZ-Archiv Kopie löschen"), @snapshot, :style => "line-height: 1.1em; float: none; padding: 0.5em; font-size: 0.9em;", :method => :delete, :confirm => _("Sind Sie sicher?")
+					link_to _("Delete archival copy"), @snapshot, :style => "line-height: 1.1em; float: none; padding: 0.5em; font-size: 0.9em;", :method => :delete, :confirm => _("Are you sure?")
 				end
 			end
 		end %>
@@ -29,7 +29,7 @@
 	<div id="detail-sidebar"  class="grid_10">
 
 		<%= content_tag :h3 do
-			_("Kopie für MIZ-Archiv editieren")
+			_("Edit archival copy")
 		end %>
 		<br />
 	
@@ -39,8 +39,8 @@
 
 			<%= content_for :buttons do
 				content_tag :div, :style => "text-align: right; padding: 10pt; background: #D2D2D2;" do
-					a = resource.submit _("Speichern")
-					a += link_to _("Abbrechen"), snapshots_path, :class => "buttons"
+					a = resource.submit _("Save")
+					a += link_to _("Cancel"), snapshots_path, :class => "buttons"
 				end
 			end %>
 

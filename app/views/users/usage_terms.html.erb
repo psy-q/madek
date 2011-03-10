@@ -13,8 +13,8 @@
 		<br /><br />
 		
 		<%= content_tag :p, :class => "usage_terms-box" do
-			a = link_to _("Ablehnen"), logout_path, :class => "buttons", :style => "font-weight: normal;"
-			a += link_to _("Akzeptieren"), usage_terms_user_path(current_user), :class => "buttons", :method => :post
+			a = link_to _("Reject"), logout_path, :class => "buttons", :style => "font-weight: normal;"
+			a += link_to _("Accept"), usage_terms_user_path(current_user), :class => "buttons", :method => :post
 		end unless params[:hide_buttons] %>
 	
 	</div>

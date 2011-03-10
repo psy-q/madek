@@ -5,7 +5,7 @@
         %div
           = text_field_tag 'query', params[:query], :id => 'query', :onfocus => "this.value='';"
           / fix this empty word
-          = submit_tag _(""), :id => 'search-submit'
+          = submit_tag "", :id => 'search-submit'
 
 :javascript
   function submit_search(filter){

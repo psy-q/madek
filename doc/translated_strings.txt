@@ -1,0 +1,277 @@
+"You are now logged out".
+"Du hast dich abgemeldet."
+
+
+
+_("Are you sure? Changes won't be saved.")
+_("Sind Sie sicher? Aenderungen werden nicht gespeichert.")
+
+
+_("Neu")
+_("New")
+
+
+_("Add")
+_("Hinzufügen")
+
+_("- Auswählen -")
+_("- Select -")
+
+
+_("Save these grouping settings")
+_("Gruppierungseinstellungen speichern")
+
+_("Continue without grouping")
+_("Weiter ohne Gruppierung")
+
+
+
+_("%s o'clock")
+_("%s Uhr")
+
+
+_("Apply to other media")
+_("Übertragen auf andere Medien")
+
+
+
+
+_("Public")
+_("Öffentlich")
+
+
+_("Public for logged-in users")
+_("Öffentlich für angemeldete Benutzer")
+
+ _("Logged-in users")
+ _("Angemeldete Benutzer/innen")
+
+_("Only available to you")
+_("Nur für Sie selbst")
+
+
+
+_("Are you sure?")
+_("Sind Sie sicher?")
+
+
+
+_("You don't have appropriate permission to perform this operation.")
+"Sie haben nicht die notwendige Zugriffsberechtigung."
+
+
+ _("Please log in") 
+"Bitte anmelden."
+
+
+
+			= link_to _("Meine Medien"), user_media_entries_path(current_user)
+			= link_to _("Meine Sets"), user_media_sets_path(current_user)
+			= link_to _("Meine Favoriten"), favorites_media_entries_path
+			= link_to _("Kopien für MIZ-Archiv"), snapshots_path if current_user.groups.is_member?("MIZ-Archiv")
+			= link_to _("Meine Gruppen"), groups_path, :class => "item_line"
+			= link_to _("Admin"), admin_root_path, :class => "item_line" if current_user.groups.is_member?("Admin")
+			= link_to _("Abmelden"), logout_path, :class => "item_line"
+- else
+	%li
+		%span.head_menu{:style => "background: #AAD450; -moz-border-radius: 3px; -webkit-border-radius: 3px;"}
+			= link_to _("Anmelden"), login_path, :style => "background: #AAD450; color:#fff"
+
+
+
+_("Sie haben keine Medien hochgeladen")
+_("You have not uploaded any media")
+
+
+_("There aren't any more media entries")
+_("Es gibt keine weitere Medieneinträge")
+
+
+_("Access permissions")
+_("Zugriffsberechtigungen")
+
+
+_("Upload these media elements")
+_("Ausgewählte Medien hochladen")
+
+
+_("Dateiname")
+_("File name")
+
+
+_("Ansicht")
+_("View")
+
+
+_("Size")
+_("Grösse")
+
+
+_("Remove?")
+_("Entfernen?")
+
+
+_("Upload progress")
+_("Uploadfortschritt")
+
+
+
+_("Files")
+_("Dateien")
+
+
+_("Uploads finished")
+_("Uploads abgeschlossen")
+
+
+_("Save metadata and continue")
+_("Metadaten speichern und weiter")
+
+
+_("Please fill in the required fields (\"Title\" and \"Copyright\").")
+_("Bitte füllen Sie die Pflichtfelder aus (\"Titel\" und \"Copyright\").")
+
+
+_("Export ZIP")
+_("ZIP exportieren")
+
+
+_("Export XML")
+_("XML exportieren")
+
+
+_("Delete archival copy")
+_("MIZ-Archiv Kopie löschen")
+
+
+_("Edit archival copy")
+_("Kopie für MIZ-Archiv editieren")
+
+_("Archival copies")
+_("Kopien für MIZ-Archiv")
+
+_("Edit archival metadata")
+_("Metadaten für MIZ-Archiv editieren")
+
+_("Create archival copy")
+_("Kopie für MIZ-Archiv erstellen")
+
+
+_("Speichern")
+_("Save")
+
+_("Abbrechen")
+_("Cancel")
+
+
+_("Save settings")
+_("Einstellungen speichern")
+
+
+_("Save settings and continue")
+_("Einstellungen speichern und weiter")
+
+
+_("Delete")
+_("Löschen")
+
+
+_("Group")
+_("Gruppe")
+
+
+_("Insert person")
+_("Personendaten einfügen")
+
+
+_("Gruppendaten einfügen")
+_("Insert group")
+
+_("Restliche %d anzeigen")
+_("Show the other %d")
+
+
+_("Create new set")
+_("Neues Set erstellen")
+
+
+_("No sets")
+_("Keine Sets vorhanden")
+
+
+_("Merken")
+_("Bookmark")
+
+
+_("Description by (before the upload)")
+_("Beschreibung durch (vor dem Hochladen ins Medienarchiv)")
+
+
+
+_("This copy is being edited by the archival experts.")
+_("Diese Kopie wird gegenwärtig durch das MIZ-Archiv bearbeitet.")
+
+
+_("Meine Schlagworte")
+_("My keywords")
+
+_("Beliebteste")
+_("Most popular")
+
+
+_("Latest")
+_("Neueste")
+
+_("No media entries found")
+_("Keine Medieneinträge gefunden")
+
+
+
+_("Previous")
+_("Zurück")
+
+_("Next")
+_("Weiter")
+
+
+_("Favorites") 
+_("Favoriten") 
+
+
+_("Favorit löschen")
+_("Delete favorite")
+
+_("Save favorite")
+_("Favorit speichern")
+
+
+_("Diesen Medieneintrag als")
+_("This media entry as")
+
+
+_("My favorites (%d)")
+_("Meine Favoriten (%d)")
+
+
+_("Original file without metadata.")
+_("Originaldatei ohne eingeschriebene Metadaten.")
+
+
+_("File with current metadata")
+_("Datei mit aktuellen Metadaten")
+
+
+_("You have not uploaded any media yet.")
+_("Sie haben noch keine Medien hochgeladen.")
+
+
+ _("No further media entries.")
+ _("Es gibt keine weiteren Medieneinträge.")
+
+
+
+_("Medieneinträge anderer")
+_("Other people's media entries")
+
+My media entries
+Meine Medieneinträge

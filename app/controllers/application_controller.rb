@@ -8,6 +8,7 @@ class ApplicationController < ActionController::Base
 ##############################################  
 # Authentication
 
+
   before_filter :login_required, :except => [:root, :login, :login_successful, :logout, :feedback] # TODO :help
 
   helper_method :current_user, :logged_in?, :_
@@ -22,10 +23,18 @@ class ApplicationController < ActionController::Base
 
 ##############################################  
 
-  # TODO i18n
-  def _(s)
-    s
+  # I18n
+  before_filter :set_gettext_locale
+
+  def set_gettext_locale
+#    I18n.locale = 'de-CH'
+    I18n.locale = 'en-GB'
+
   end
+  
+#   def _(s)
+#     s
+#   end
 
 ##############################################  
 

@@ -38,7 +38,7 @@ module MetaDataHelper
         s = meta_datum.deserialized_value
         s.join(' - ').html_safe
       when "Date"
-        _("%s Uhr") % meta_datum.deserialized_value.to_formatted_s(:date_time)
+        _("%s o'clock") % meta_datum.deserialized_value.to_formatted_s(:date_time)
       else
         s = meta_datum.to_s
         #(s =~ /\n/ ? simple_format(s) : s)
@@ -492,7 +492,7 @@ module MetaDataHelper
       #tmp# h += meta_datum.text_field :value, :class => "value", :"data-required" => is_required
       h += text_field_tag "#{meta_datum.object_name}[value]", meta_datum.object.to_s, :class => "value", :"data-required" => is_required
       h += content_tag :span, :class => "with_actions" do
-            link_to _("Übertragen auf andere Medien"), "#", :class => "buttons"
+            link_to _("Apply to other media"), "#", :class => "buttons"
            end if with_actions # TODO see _bulk_edit
     else
       #tmp# h += meta_datum.text_area :value, :"data-required" => is_required #, :rows => 2

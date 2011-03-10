@@ -30,12 +30,12 @@
 					<%= content_tag :ul, :class => "clearfix", :id => "toggle-panel" do %>
 
 						<%= content_tag :li do %>
-							<%= link_to _("Editieren"), edit_media_entry_path(media_entry), :style => "font-weight: bold;" %>
+							<%= link_to _("Edit"), edit_media_entry_path(media_entry), :style => "font-weight: bold;" %>
 						<% end if can_edit %>
 
 						<%= content_tag :li do
 							link_to "#", :panel => "bookmark", :class => "", :onclick => "return false;" do %>
-								<span class=''></span><%= _("Merken") %>
+								<span class=''></span><%= _("Bookmark") %>
 							<% end
 						end if logged_in? %>
 
@@ -60,23 +60,23 @@
 						<% end if false #future# %>
 
 						<%= content_tag :li do %>
-							<%= link_to _("Gruppieren"), "#", :panel => "media_set", :class => "", :style => "", :onclick => "return false;" %>
+							<%= link_to _("Group"), "#", :panel => "media_set", :class => "", :style => "", :onclick => "return false;" %>
 						<% end %>
 
 						<%= content_tag :li do %>
-							<%= link_to _("Löschen"), "#", :panel => "delete", :onclick => "return false;" %>
+							<%= link_to _("Delete"), "#", :panel => "delete", :onclick => "return false;" %>
 						<% end if can_edit %>
 
 						<%= content_tag :li do %>
-							<%= link_to _("Einstellungen"), "#", :panel => "settings", :class => "", :style => "", :onclick => "return false;" %>
+							<%= link_to _("Settings"), "#", :panel => "settings", :class => "", :style => "", :onclick => "return false;" %>
 						<% end if false #future# can_edit # TODO :delete %>
 
 						<%= content_tag :li do %>
-							<%= link_to _("Metadaten für MIZ-Archiv editieren"), edit_tms_media_entry_path(@media_entry) %>
+							<%= link_to _("Edit archival metadata"), edit_tms_media_entry_path(@media_entry) %>
 						<% end if can_edit and is_expert and media_entry.snapshotable? # OPTIMIZE %>
 
 						<%= content_tag :li do %>
-							<%= link_to _("Kopie für MIZ-Archiv erstellen"), to_snapshot_media_entry_path(media_entry) %>
+							<%= link_to _("Create archival copy"), to_snapshot_media_entry_path(media_entry) %>
 						<% end if is_expert and media_entry.snapshotable? %>
 
 					<% end %>
@@ -91,7 +91,7 @@
 							<% if logged_in? %>
 								<%= render :partial => "favorite_link", :locals => {:media_entry => media_entry} %>
 							<% else %>
-								<%= _("Bitte anmelden.") %>
+								<%= _("Please log in.") %>
 							<% end %>
 						</div>
 						<%= javascript_tag do %>
@@ -121,7 +121,7 @@
 								<%#temp# media_sets_autocomplete(set_media_sets_upload_path, media_entry) %>
 								<%= media_sets_setter(media_sets_media_entry_path(media_entry)) %>
 							<% else %>
-								<%= _("Bitte anmelden.") %>
+								<%= _("Please log in.") %>
 							<% end %>
 						</div>
 					</div>
@@ -135,9 +135,9 @@
 
 					<%= content_tag :div, :id => "delete-panel", :class => "actionbar-panel", :style => "display: none" do %>
 						<div class="actionbar-inner-panel">
-							<%= _("Sind Sie sicher?") %>
-							<%= link_to _("Ja"), media_entry, :method => :delete, :class => "buttons" %>
-							<%= link_to _("Nein"), "#", :onclick => "$(\"a[panel='delete']\").trigger('click'); return false;", :class => "buttons" %>
+							<%= _("Are you sure?") %>
+							<%= link_to _("Yes"), media_entry, :method => :delete, :class => "buttons" %>
+							<%= link_to _("No"), "#", :onclick => "$(\"a[panel='delete']\").trigger('click'); return false;", :class => "buttons" %>
 						</div>
 					<% end if can_edit %>
 					
@@ -172,23 +172,23 @@
 
 
 				<%= content_tag :h3, :class => "tab-title", :style => "margin-top: 1em" do #, :onclick => "$('#further_information').toggle();"
-					_("Weitere Informationen")
+					_("Further information")
 				end %>
 
 				<div class="tabs" id="further_information">
 					<%= content_tag :ul do
 						a = content_tag :li do
-							link_to _("Aktivitäten"), "#usage-tabs-1" 
+							link_to _("Activities"), "#usage-tabs-1"
 						end
 						a += content_tag :li do
-							link_to _("Zugriffsberechtigung"), (Permission.authorized?(current_user, :manage, media_entry) ? edit_multiple_media_entry_permissions_path(media_entry) : media_entry_permissions_path(media_entry)) 
+							link_to _("Permission"), (Permission.authorized?(current_user, :manage, media_entry) ? edit_multiple_media_entry_permissions_path(media_entry) : media_entry_permissions_path(media_entry))
 						end
 					end %>
 			
 					<div id="usage-tabs-1" class="meta_data">
 						<table class="metadata-table">
 							<tr>
-								<td style="width: 30%;"><%= _("Hochgeladen von") -%></td>
+								<td style="width: 30%;"><%= _("Uploaded by") -%></td>
 								<td style="width: 70%; text-align: left;">
 									<%#temp#= link_to media_entry.user, media_entry.user %>
 									<%#TODO 2007# uploader_user = media_entry.meta_data.get_value_for("uploaded by") %>
@@ -196,19 +196,19 @@
 								</td>
 							</tr>
 							<tr>
-								<td style="text-align: right;"><%= _("Hochgeladen am") -%></td>
+								<td style="text-align: right;"><%= _("Uploaded on/at") -%></td>
 								<%#TODO 2007# %>
 								<td><%= _("%s Uhr") % media_entry.created_at.to_formatted_s(:date_time) %></td>
 							</tr>
 							<% edit_sessions = media_entry.edit_sessions
 							content_tag :tr do %>
-								<td style="text-align: right;"><%= _("Letzte Aktualisierung") -%></td>
+								<td style="text-align: right;"><%= _("Last update") -%></td>
 								<td>
 									<%#= media_entry.updated_at.to_formatted_s(:date_time) %>
 									<%= content_tag :ul do
 										edit_sessions.each do |edit_session|
 											content_tag :li do %>
-												<%= link_to edit_session.user, edit_session.user %> / <%= _("%s Uhr") % edit_session.created_at.to_formatted_s(:date_time) %>
+												<%= link_to edit_session.user, edit_session.user %> / <%= _("%s o'clock") % edit_session.created_at.to_formatted_s(:date_time) %>
 											<% end
 										end
 									end %>
@@ -216,12 +216,12 @@
 							<% end unless edit_sessions.empty? %>
 							<% description_author_before_import = media_entry.meta_data.get_value_for("description author before import") %>
 							<%= content_tag :tr do %>
-								<td style="text-align: right; font-weight: bold;"><%= _("Beschreibung durch (vor dem Hochladen ins Medienarchiv)") -%></td>
+								<td style="text-align: right; font-weight: bold;"><%= _("Description by (before the upload)") -%></td>
 								<td><%= description_author_before_import %></td>
 							<% end unless description_author_before_import.blank? %>
 							<%= content_tag :tr do %>
-								<td style="text-align: right; font-weight: bold;"><%= _("MIZ-Archiv Kopie") -%></td>
-								<td><%= _("%s Uhr") % media_entry.snapshots.first.created_at.to_formatted_s(:date_time) %></td>
+								<td style="text-align: right; font-weight: bold;"><%= _("Archival copy") -%></td>
+								<td><%= _("%s o'clock") % media_entry.snapshots.first.created_at.to_formatted_s(:date_time) %></td>
 							<% end unless media_entry.snapshots.empty? %>
 						</table>
 					</div>
@@ -258,7 +258,7 @@
 				end unless media_entry.snapshots.empty? %>
 				
 				<%= content_tag :div, :style => "font-size: 0.9em; margin-top: 0.5em;", :class => "notice" do %>
-					<%= _("Diese Kopie wird gegenwärtig durch das MIZ-Archiv bearbeitet.")%>
+					<%= _("This copy is being edited by the archival experts.")%>
 				<% end unless media_entry.snapshotable? %>
 			<% end %>
 			

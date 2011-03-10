@@ -79,7 +79,7 @@ module ApplicationHelper
         var isUnsavedChange = false;
         window.onbeforeunload = function(){
           if( isUnsavedChange ){
-                 return "#{_("Sind Sie sicher? Aenderungen werden nicht gespeichert.")}";
+                 return "#{_("Are you sure? Changes won't be saved.")}";
           }
         }
         $(document).ready(function () {

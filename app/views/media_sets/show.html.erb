@@ -24,7 +24,7 @@
 # temp position replacement of permissions block
 	a += content_tag :div, :class => "sidebar-box", :style => "margin-top: 1em;" do
 		b = content_tag :h3 do
-			_("Zugriffsberechtigungen")
+			_("Access permissions")
 		end 
 		@resource = @media_set
 		b += if Permission.authorized?(current_user, :manage, @media_set)
@@ -41,8 +41,8 @@ end %>
 <%= content_tag :div, :class => "grid_4" do
 	a = "".html_safe
 	if can_edit
-		a += link_to _("Metadaten editieren"), edit_media_set_path(@media_set), :class => "buttons"
-		a += link_to _("Set löschen"), media_set_path(@media_set), :class => "buttons", :method => :delete, :confirm => _("Sind Sie sicher? Das Set wird gelöscht.")
+		a += link_to _("Edit metadata"), edit_media_set_path(@media_set), :class => "buttons"
+		a += link_to _("Delete set"), media_set_path(@media_set), :class => "buttons", :method => :delete, :confirm => _("Sind Sie sicher? Das Set wird gelöscht.")
 		a += tag :br
 		a += tag :br
 	end

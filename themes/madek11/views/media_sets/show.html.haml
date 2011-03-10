@@ -33,17 +33,17 @@
         Keine Medieneinträge ausgewählt
       - unless @editable_in_set.blank?
         %li#batch-edit-button.action_btn
-          = button_to _("Medieneinträge Editieren"), edit_multiple_media_entries_path, :method => :post, :id => "batch-edit"
+          = button_to _("Edit media entries"), edit_multiple_media_entries_path, :method => :post, :id => "batch-edit"
       - if @can_edit
         %li#batch-remove-button.action_btn
-          = button_to _("Aus Set Entfernen"), remove_multiple_media_set_media_entries_path(@media_set), :method => :delete, :id => "batch-remove"
+          = button_to _("Remove from set"), remove_multiple_media_set_media_entries_path(@media_set), :method => :delete, :id => "batch-remove"
       %li#batch-add-to-set.action_btn
         = form_tag add_member_media_set_url(@media_set) do
-          = select_tag "media_set_id", options_for_select([["Set auswählen…", ""]] + @editable_sets.collect {|set| [set.meta_data.get_value_for("title"), set.id]})
-          = submit_tag "Hinzufügen", :id => "batch-add-to-set"
+          = select_tag "media_set_id", options_for_select([["Select set…", ""]] + @editable_sets.collect {|set| [set.meta_data.get_value_for("title"), set.id]})
+          = submit_tag "Add", :id => "batch-add-to-set"
       - unless @managable_in_set.blank?
         %li#batch_permissions.action_btn
-          = button_to _("Zugriffsberechtigungen ändern"), edit_multiple_permissions_media_entries_path, :method => :post, :id => "batch-permissions"
+          = button_to _("Change permissions"), edit_multiple_permissions_media_entries_path, :method => :post, :id => "batch-permissions"
     #selected_items
     :plain    
       <script type="text/x-jquery-tmpl" id="mini_thumbnails">

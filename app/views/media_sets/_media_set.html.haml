@@ -9,6 +9,6 @@
 		- more_than_max_thumbs = total_entries > max_thumbs
 		= render :partial => "/media_entries/media_entry_thumb", :collection => (more_than_max_thumbs ? media_entries[0..max_thumbs-2] :media_entries), :as => :media_entry
 		- if more_than_max_thumbs
-			= link_to _("Restliche %d anzeigen") % (total_entries - max_thumbs + 1), media_set_path(media_set)
+			= link_to _("Show the other %d") % (total_entries - max_thumbs + 1), media_set_path(media_set)
 	- else
-		= _("Keine Medieneinträge vorhanden")
+		= _("No media entries")

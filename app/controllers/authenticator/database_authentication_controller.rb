@@ -27,7 +27,7 @@ class Authenticator::DatabaseAuthenticationController < ApplicationController
   
   def logout
     reset_session
-    flash[:notice] = "Du hast dich abgemeldet." 
+    flash[:notice] = _("You are now logged out.")
     redirect_to root_path
   end
 

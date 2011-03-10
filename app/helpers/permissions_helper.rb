@@ -4,11 +4,11 @@ module PermissionsHelper
   # 23.02.11: should be obsolete soon 
   def view_permission_string(resource)
     if resource.acl?(:view, :all)
-      "(#{_("Öffentlich")})"
+      "(#{_("Public")})"
     elsif resource.acl?(:view, :logged_in_users)
-      "(#{_("Öffentlich für angemeldete Benutzer")})"
+      "(#{_("Public for logged-in users")})"
     elsif resource.acl?(:view, :only, current_user)
-      "(#{_("Nur für Sie selbst")})"
+      "(#{_("Only available to you")})"
     else
       # MediaEntries that only I and certain others have access to 
     end  

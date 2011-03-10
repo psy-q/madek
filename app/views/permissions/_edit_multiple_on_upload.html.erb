@@ -40,7 +40,7 @@ is_editable_by_logged_in_users = (@resource ? @resource.acl?(:edit, :logged_in_u
 	end %>
 
 	<% if @resource %>
-		<%= f.submit _("Einstellungen speichern"), :style => "display: none;" %>
+		<%= f.submit _("Save settings"), :style => "display: none;" %>
 	<% else %>
 		<%= content_tag :p, :style => "margin: 2em 0 0.75em 0", :id => "upload_in_progress" do %>
 			<a href="#" id="dialog_link" class="ui-state-default ui-corner-all" style="color: #727272;" onclick="return false;">
@@ -49,7 +49,7 @@ is_editable_by_logged_in_users = (@resource ? @resource.acl?(:edit, :logged_in_u
 			</a>
 			&nbsp;&nbsp;Bitte gedulden Sie sich einen Moment, während das Hochladen Ihrer Medien abgeschlossen wird.
 		<% end unless @media_entries %>
-		<%= f.submit _("Einstellungen speichern und weiter") + " »", :id => "submit_to_3", :style => "margin: 2em 0; #{@media_entries ? "" : "display: none;"}" %>
+		<%= f.submit _("Save settings and continue") + " »", :id => "submit_to_3", :style => "margin: 2em 0; #{@media_entries ? "" : "display: none;"}" %>
 	<% end %>
 <% end %>
 

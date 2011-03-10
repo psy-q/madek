@@ -1,9 +1,9 @@
 %tr
   %td
     - if permission.subject.nil?
-      = _("Angemeldete Benutzer/innen")
+      =  _("Logged-in users")
       %br
-      = _("Öffentlich und angemeldete Benutzer/innen")
+      = _("Public for logged-in users")
     - else
       = permission.subject
 
@@ -14,5 +14,5 @@
         %br
       %input{:type => "checkbox", :checked => (permission.actions[key] == true), :path => polymorphic_path([@resource, permission], :key => key)}
   %td
-    = link_to _("Löschen"), url_for([@resource, permission]), :remote => true, :method => :delete,
-      :confirm => _("Sind Sie sicher?") if permission.subject and permission.subject != current_user
+    = link_to _("Delete"), url_for([@resource, permission]), :remote => true, :method => :delete,
+      :confirm => _("Are you sure?") if permission.subject and permission.subject != current_user

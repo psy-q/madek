@@ -1,0 +1,833 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: version 0.0.1\n"
+"POT-Creation-Date: 2011-03-10 16:47+0100\n"
+"PO-Revision-Date: 2011-03-10 16:01+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: app/views/upload/new.html.erb:44
+msgid " Multiuploader"
+msgstr ""
+
+#: app/views/upload/_files.html.erb:34
+msgid "%d KB"
+msgstr ""
+
+#: app/views/media_entries/_media_entry.html.erb:201
+msgid "%s Uhr"
+msgstr ""
+
+#: app/helpers/meta_data_helper.rb:41
+#: app/views/media_entries/_media_entry.html.erb:211
+#: app/views/media_entries/_media_entry.html.erb:224
+msgid "%s o'clock"
+msgstr ""
+
+#: app/helpers/media_sets_helper.rb:39
+msgid "- Select -"
+msgstr ""
+
+#: app/views/media_sets/edit.html.erb:19
+#: themes/madek11/views/media_entries/edit_multiple.html.haml:41
+msgid "Abbrechen"
+msgstr ""
+
+#: app/views/users/usage_terms.html.erb:17
+msgid "Accept"
+msgstr ""
+
+#: app/views/upload/new.html.erb:79 app/views/upload/show.html.erb:19
+#: app/views/media_sets/show.html.erb:27
+msgid "Access permissions"
+msgstr ""
+
+#: app/views/media_entries/_media_entry.html.erb:181
+msgid "Activities"
+msgstr ""
+
+#: app/helpers/media_sets_helper.rb:49
+msgid "Add"
+msgstr ""
+
+#: app/views/admin/definitions/index.html.haml:17
+msgid "Add Key"
+msgstr ""
+
+#: app/views/users/_user_bar.html.haml:12
+#: themes/madek11/views/users/_user_bar.html.haml:12
+msgid "Admin"
+msgstr ""
+
+#: app/helpers/meta_data_helper.rb:495
+msgid "Apply to other media"
+msgstr ""
+
+#: app/views/snapshots/index.html.erb:2
+#: themes/madek11/views/users/_user_bar.html.haml:10
+msgid "Archival copies"
+msgstr ""
+
+#: app/views/media_entries/_media_entry.html.erb:223
+msgid "Archival copy"
+msgstr ""
+
+#: app/views/media_entries/_media_entry.html.erb:138
+#: app/views/snapshots/show.html.erb:22
+#: app/views/admin/media_sets/index.html.haml:20
+#: app/views/admin/groups/index.html.haml:17
+#: app/views/admin/definitions/index.html.haml:50
+#: app/views/admin/keys/index.html.haml:32
+#: app/views/permissions/_edit.html.haml:19
+#: themes/madek11/views/groups/index.html.haml:14
+msgid "Are you sure?"
+msgstr ""
+
+#: app/views/upload/new.html.erb:72
+msgid "Ausgewählte Medien hochladen"
+msgstr ""
+
+#: app/views/layouts/admin/_menu.html.erb:32
+msgid "Ausgewählte Sets"
+msgstr ""
+
+#: themes/madek11/views/groups/edit.html.haml:42
+msgid "Back to my groups"
+msgstr ""
+
+#: themes/madek11/views/groups/new.html.haml:15
+msgid "Back to the groups"
+msgstr ""
+
+#: app/views/upload/new.html.erb:56
+msgid "Basic Uploader"
+msgstr ""
+
+#: app/views/media_sets/edit.html.erb:21
+#: themes/madek11/views/media_sets/edit.html.haml:12
+msgid "Bitte füllen Sie die Pflichtfelder aus (\"Titel\")."
+msgstr ""
+
+#: app/views/media_entries/_media_entry.html.erb:38
+msgid "Bookmark"
+msgstr ""
+
+#: app/views/meta_data/_edit.html.erb:16
+#: app/views/media_entries/edit_tms.html.erb:43
+#: app/views/media_entries/edit.html.erb:37
+#: app/views/snapshots/show.html.erb:43
+#: themes/madek11/views/media_sets/edit.html.haml:10
+msgid "Cancel"
+msgstr ""
+
+#: themes/madek11/views/media_sets/show.html.haml:46
+msgid "Change permissions"
+msgstr ""
+
+#: app/views/layouts/admin/_menu.html.erb:10
+msgid "Contexts"
+msgstr ""
+
+#: app/helpers/media_sets_helper.rb:58
+msgid "Continue without grouping"
+msgstr ""
+
+#: app/views/users/_user_bar.html.haml:10
+msgid "Copies for Archival"
+msgstr ""
+
+#: app/views/admin/contexts/new.js.erb:1
+#: app/views/admin/definitions/new.js.erb:1 app/views/admin/keys/new.js.erb:1
+#: app/views/media_sets/index.html.haml:43
+#: app/views/admin/media_sets/new.html.haml:13
+#: app/views/admin/groups/new.js.haml:1
+msgid "Create"
+msgstr ""
+
+#: app/views/media_entries/_media_entry.html.erb:79
+msgid "Create archival copy"
+msgstr ""
+
+#: themes/madek11/views/groups/index.html.haml:17
+msgid "Create new group"
+msgstr ""
+
+#: app/views/media_sets/index.html.haml:28
+msgid "Create new set"
+msgstr ""
+
+#: app/views/permissions/new.html.erb:7
+msgid "Create permissions"
+msgstr ""
+
+#: app/views/media_entries/_download.html.haml:64
+msgid ""
+"Das gezippte Verzeichnis enthält die Datei mit eingeschriebenen, aktuellen "
+"Metadaten sowie einem separaten XML und YAML Metadatendokument"
+msgstr ""
+
+#: app/views/media_entries/_media_entry.html.erb:162
+msgid "Datei"
+msgstr ""
+
+#: app/views/media_entries/_download.html.haml:85
+msgid "Datei mit ursprünglichen Metadaten"
+msgstr ""
+
+#: app/views/admin/keys/_form.html.erb:39
+#: app/views/media_entries/_media_entry.html.erb:67
+#: app/views/admin/media_sets/index.html.haml:20
+#: app/views/admin/groups/index.html.haml:17
+#: app/views/admin/definitions/index.html.haml:15
+#: app/views/admin/definitions/index.html.haml:50
+#: app/views/admin/keys/index.html.haml:32
+#: app/views/permissions/_edit.html.haml:19
+#: themes/madek11/views/groups/_user.html.haml:3
+#: themes/madek11/views/groups/index.html.haml:14
+#: themes/madek11/views/media_entries/edit_multiple_permissions.html.haml:99
+msgid "Delete"
+msgstr ""
+
+#: app/views/snapshots/show.html.erb:22
+msgid "Delete archival copy"
+msgstr ""
+
+#: app/views/media_entries/_favorite_link.html.erb:4
+msgid "Delete favorite"
+msgstr ""
+
+#: app/views/media_sets/show.html.erb:45
+msgid "Delete set"
+msgstr ""
+
+#: app/views/media_entries/_media_entry.html.erb:219
+msgid "Description by (before the upload)"
+msgstr ""
+
+#: app/views/media_entries/_download.html.haml:42
+msgid ""
+"Die aktuellen Metadaten aus dem Medienarchiv im Format XMP/IPTC sind direkt "
+"in die Datei eingeschrieben."
+msgstr ""
+
+#: app/views/media_entries/edit_tms.html.erb:22
+msgid "Diese Kopie wird gegenwärtig durch das MIZ-Archiv bearbeitet."
+msgstr ""
+
+#: app/views/media_entries/_media_entry.html.erb:47
+#: app/views/media_entries/_download.html.haml:13
+#: app/views/media_entries/_download.html.haml:25
+#: app/views/media_entries/_download.html.haml:33
+#: app/views/media_entries/_download.html.haml:48
+#: app/views/media_entries/_download.html.haml:55
+#: app/views/media_entries/_download.html.haml:70
+#: app/views/media_entries/_download.html.haml:77
+#: app/views/media_entries/_download.html.haml:91
+#: app/views/media_entries/_download.html.haml:99
+msgid "Download"
+msgstr ""
+
+#: app/views/meta_data/_show.html.erb:8
+#: app/views/admin/people/index.html.erb:19
+#: app/views/admin/usage_terms/show.html.erb:16
+#: app/views/admin/users/index.html.erb:26
+#: app/views/media_entries/_media_entry.html.erb:33
+#: app/views/admin/media_sets/index.html.haml:18
+#: app/views/admin/groups/index.html.haml:16
+#: app/views/admin/definitions/index.html.haml:13
+#: app/views/admin/definitions/index.html.haml:48
+#: app/views/admin/keys/index.html.haml:30
+#: themes/madek11/views/groups/index.html.haml:13
+msgid "Edit"
+msgstr ""
+
+#: app/views/snapshots/show.html.erb:32
+msgid "Edit archival copy"
+msgstr ""
+
+#: app/views/media_entries/_media_entry.html.erb:75
+#: app/views/media_entries/edit_tms.html.erb:32
+#: app/views/media_entries/edit.html.erb:16
+msgid "Edit archival metadata"
+msgstr ""
+
+#: themes/madek11/views/media_sets/show.html.haml:36
+msgid "Edit media entries"
+msgstr ""
+
+#: app/views/media_sets/show.html.erb:44 app/views/media_sets/edit.html.erb:7
+#: app/views/media_entries/edit.html.erb:26
+#: themes/madek11/views/media_sets/edit.html.haml:5
+msgid "Edit metadata"
+msgstr ""
+
+#: app/views/admin/users/index.html.erb:4
+msgid "Email"
+msgstr ""
+
+#: app/views/meta_data/index.html.erb:4
+msgid "Es sind keine Metadaten zu diesem Kontext bereit gestellt."
+msgstr ""
+
+#: app/views/upload/_files.html.erb:48
+msgid "Es wurden noch keine Medien ausgewählt."
+msgstr ""
+
+#: app/views/layouts/admin/main.html.erb:84
+msgid "Export"
+msgstr ""
+
+#: app/views/snapshots/show.html.erb:16
+msgid "Export XML"
+msgstr ""
+
+#: app/views/snapshots/show.html.erb:19
+msgid "Export ZIP"
+msgstr ""
+
+#: app/views/media_entries/favorites.html.erb:2
+msgid "Favorites"
+msgstr ""
+
+#: app/views/layouts/_menu.html.haml:24
+#: themes/madek11/views/layouts/_menu_bu.html.haml:23
+#: themes/madek11/views/layouts/_header.html.haml:15
+msgid "Feedback"
+msgstr ""
+
+#: app/views/upload/_files.html.erb:13
+msgid "File name"
+msgstr ""
+
+#: app/views/media_entries/_download.html.haml:41
+msgid "File with current metadata"
+msgstr ""
+
+#: app/views/media_entries/_download.html.haml:18
+msgid "File without metadata"
+msgstr ""
+
+#: app/views/upload/_files.html.erb:57
+msgid "Files"
+msgstr ""
+
+#: app/views/people/new.html.erb:21
+msgid "First name"
+msgstr ""
+
+#: app/views/admin/people/index.html.erb:3
+msgid "Firstname"
+msgstr ""
+
+#: app/views/admin/definitions/index.html.haml:11
+msgid "For user interface"
+msgstr ""
+
+#: app/views/media_entries/_media_entry.html.erb:175
+msgid "Further information"
+msgstr ""
+
+#: app/views/permissions/_edit_multiple_on_upload.html.erb:17
+msgid "Für wen %s sichtbar?"
+msgstr ""
+
+#: app/views/people/new.html.erb:9
+#: app/views/media_entries/_media_entry.html.erb:63
+msgid "Group"
+msgstr ""
+
+#: app/views/layouts/admin/_menu.html.erb:22
+#: app/views/admin/users/index.html.erb:7
+msgid "Groups"
+msgstr ""
+
+#: app/views/media_sets/show.html.erb:15
+msgid "Hierher ziehen und loslassen, um aus dem Set zu entfernen"
+msgstr ""
+
+#: app/views/layouts/admin/main.html.erb:86
+#: app/views/admin/media_entries/import.html.erb:4
+#: app/views/admin/meta/import.html.erb:5
+msgid "Import"
+msgstr ""
+
+#: app/views/upload/import_summary.html.erb:17
+msgid "Import has been completed succesfully! Imported %d files"
+msgstr ""
+
+#: app/views/upload/import_summary.html.erb:21
+msgid "Import has failed!"
+msgstr ""
+
+#: app/views/layouts/admin/_menu.html.erb:31
+msgid "Importer"
+msgstr ""
+
+#: app/views/people/new.html.erb:43
+msgid "Insert group"
+msgstr ""
+
+#: app/views/people/new.html.erb:30
+msgid "Insert person"
+msgstr ""
+
+#: app/controllers/authenticator/database_authentication_controller.rb:18
+msgid "Invalid username/password"
+msgstr ""
+
+#: app/views/media_sets/show.html.erb:20
+msgid "Keine Medieneinträge vorhanden"
+msgstr ""
+
+#: app/views/layouts/admin/_menu.html.erb:9
+msgid "Keys"
+msgstr ""
+
+#: app/views/people/new.html.erb:17
+msgid "Last name"
+msgstr ""
+
+#: app/views/media_entries/_media_entry.html.erb:205
+msgid "Last update"
+msgstr ""
+
+#: app/views/admin/people/index.html.erb:4
+msgid "Lastname"
+msgstr ""
+
+#: app/views/media_entries/keywords.html.erb:10
+msgid "Latest"
+msgstr ""
+
+#: app/views/layouts/admin/main.html.erb:75
+#: app/views/layouts/_header.html.erb:13
+msgid "Loading"
+msgstr ""
+
+#: app/views/application/root.html.erb:142
+#: app/views/users/_user_bar.html.haml:17
+#: themes/madek11/views/users/_user_bar.html.haml:17
+msgid "Log in"
+msgstr ""
+
+#: app/views/users/_user_bar.html.haml:13
+#: themes/madek11/views/users/_user_bar.html.haml:13
+msgid "Log out"
+msgstr ""
+
+#: app/views/permissions/_edit.html.haml:4
+msgid "Logged-in users"
+msgstr ""
+
+#: app/views/application/root.html.erb:162
+#: app/views/admin/users/index.html.erb:3
+msgid "Login"
+msgstr ""
+
+#: app/views/layouts/admin/_menu.html.erb:11
+msgid "Mapping"
+msgstr ""
+
+#: app/views/layouts/admin/_menu.html.erb:5
+msgid "Meta"
+msgstr ""
+
+#: app/views/admin/people/index.html.erb:6
+msgid "MetaData"
+msgstr ""
+
+#: app/views/media_entries/_media_entry.html.erb:149
+msgid "Metadaten"
+msgstr ""
+
+#: themes/madek11/views/users/show.html.haml:11
+#: themes/madek11/views/users/show.html.haml:23
+msgid "More…"
+msgstr ""
+
+#: app/views/media_entries/keywords.html.erb:7
+msgid "Most popular"
+msgstr ""
+
+#: app/views/users/_user_bar.html.haml:9
+msgid "My Favorites"
+msgstr ""
+
+#: app/views/users/_user_bar.html.haml:11
+msgid "My Groups"
+msgstr ""
+
+#: app/views/users/_user_bar.html.haml:7
+msgid "My Media"
+msgstr ""
+
+#: app/views/users/_user_bar.html.haml:8
+msgid "My Sets"
+msgstr ""
+
+#: themes/madek11/views/users/_user_bar.html.haml:9
+msgid "My favorites"
+msgstr ""
+
+#: app/views/media_entries/_favorite_link.html.erb:15
+msgid "My favorites (%d)"
+msgstr ""
+
+#: themes/madek11/views/users/_user_bar.html.haml:11
+msgid "My groups"
+msgstr ""
+
+#: app/views/media_entries/keywords.html.erb:4
+msgid "My keywords"
+msgstr ""
+
+#: themes/madek11/views/users/_user_bar.html.haml:7
+msgid "My media"
+msgstr ""
+
+#: themes/madek11/views/users/show.html.haml:4
+msgid "My media entries"
+msgstr ""
+
+#: themes/madek11/views/users/_user_bar.html.haml:8
+msgid "My sets"
+msgstr ""
+
+#: app/views/people/new.html.erb:38 app/views/admin/users/index.html.erb:5
+#: app/views/admin/groups/index.html.haml:6
+msgid "Name"
+msgstr ""
+
+#: app/helpers/media_sets_helper.rb:43
+msgid "New"
+msgstr ""
+
+#: app/views/admin/groups/index.html.haml:4
+msgid "New Group"
+msgstr ""
+
+#: app/views/admin/keys/index.html.haml:4
+msgid "New Key"
+msgstr ""
+
+#: app/views/admin/media_sets/index.html.haml:4
+msgid "New Set"
+msgstr ""
+
+#: app/views/media_entries/_index.html.erb:3
+#: themes/madek11/views/media_entries/_index.html.haml:1
+msgid "Next"
+msgstr ""
+
+#: app/views/media_entries/_media_entry.html.erb:140
+msgid "No"
+msgstr ""
+
+#: themes/madek11/views/users/show.html.haml:25
+msgid "No further media entries."
+msgstr ""
+
+#: app/views/media_sets/_media_set.html.haml:14
+msgid "No media entries"
+msgstr ""
+
+#: app/views/media_entries/_index.html.erb:16
+msgid "No media entries found"
+msgstr ""
+
+#: app/views/media_sets/index.html.haml:23
+msgid "No sets"
+msgstr ""
+
+#: app/views/layouts/_footer.html.erb:3
+msgid "Nutzungsbedingungen"
+msgstr ""
+
+#: app/views/media_entries/_download.html.haml:19
+msgid "Original file without metadata."
+msgstr ""
+
+#: app/views/media_entries/_download.html.haml:86
+msgid ""
+"Originaldatei mit gleichen Metadaten wie beim Hochladen ins Medienarchiv"
+msgstr ""
+
+#: themes/madek11/views/users/show.html.haml:16
+msgid "Other people's media entries"
+msgstr ""
+
+#: app/views/layouts/admin/_menu.html.erb:21
+msgid "People"
+msgstr ""
+
+#: app/views/media_entries/_media_entry.html.erb:184
+msgid "Permission"
+msgstr ""
+
+#: app/views/people/new.html.erb:6
+msgid "Person"
+msgstr ""
+
+#: app/views/upload/edit.html.erb:99
+msgid "Please fill in the required fields (\"Title\" and \"Copyright\")."
+msgstr ""
+
+#: app/views/media_entries/_media_entry.html.erb:94
+#: app/views/media_entries/_media_entry.html.erb:124
+msgid "Please log in."
+msgstr ""
+
+#: app/views/media_entries/_index.html.erb:3
+#: themes/madek11/views/media_entries/_index.html.haml:1
+msgid "Previous"
+msgstr ""
+
+#: app/views/people/new.html.erb:25
+msgid "Pseudonym"
+msgstr ""
+
+#: themes/madek11/views/media_entries/edit_multiple_permissions.html.haml:90
+msgid "Public"
+msgstr ""
+
+#: app/views/permissions/_edit.html.haml:6
+msgid "Public for logged-in users"
+msgstr ""
+
+#: app/views/users/usage_terms.html.erb:16
+msgid "Reject"
+msgstr ""
+
+#: app/views/admin/groups/_user.html.haml:5
+msgid "Remove"
+msgstr ""
+
+#: themes/madek11/views/media_sets/show.html.haml:39
+msgid "Remove from set"
+msgstr ""
+
+#: app/views/upload/_files.html.erb:20
+msgid "Remove?"
+msgstr ""
+
+#: app/views/layouts/admin/_menu.html.erb:27
+msgid "Resources"
+msgstr ""
+
+#: app/views/media_sets/new.html.erb:26
+#: app/views/meta_data/edit_multiple.html.erb:44
+#: app/views/meta_data/_edit.html.erb:17 app/views/meta_data/_new.html.erb:12
+#: app/views/media_entries/edit_tms.html.erb:42
+#: app/views/media_entries/edit.html.erb:36
+#: app/views/snapshots/show.html.erb:42
+#: themes/madek11/views/media_sets/edit.html.haml:9
+msgid "Save"
+msgstr ""
+
+#: app/views/media_entries/_favorite_link.html.erb:7
+msgid "Save favorite"
+msgstr ""
+
+#: app/views/upload/edit.html.erb:96
+msgid "Save metadata and continue"
+msgstr ""
+
+#: app/views/permissions/_edit_multiple_on_upload.html.erb:43
+msgid "Save settings"
+msgstr ""
+
+#: app/views/permissions/_edit_multiple_on_upload.html.erb:52
+msgid "Save settings and continue"
+msgstr ""
+
+#: app/helpers/media_sets_helper.rb:54
+msgid "Save these grouping settings"
+msgstr ""
+
+#: app/views/layouts/_search.html.erb:8
+msgid "Search"
+msgstr ""
+
+#: app/views/media_sets/show.html.erb:5
+msgid "Set Inhalt"
+msgstr ""
+
+#: app/helpers/media_sets_helper.rb:35
+#: app/views/layouts/admin/_menu.html.erb:33
+msgid "Sets"
+msgstr ""
+
+#: app/views/media_entries/_media_entry.html.erb:71
+#: app/views/media_entries/_media_entry.html.erb:131
+msgid "Settings"
+msgstr ""
+
+#: app/views/media_sets/_media_set.html.haml:12
+msgid "Show the other %d"
+msgstr ""
+
+#: app/views/media_sets/show.html.erb:45
+msgid "Sind Sie sicher? Das Set wird gelöscht."
+msgstr ""
+
+#: app/views/upload/_files.html.erb:16
+#: app/views/media_entries/_download.html.haml:12
+msgid "Size"
+msgstr ""
+
+#: app/views/media_sets/edit.html.erb:18
+#: themes/madek11/views/media_entries/edit_multiple.html.haml:40
+msgid "Speichern"
+msgstr ""
+
+#: app/views/layouts/admin/_menu.html.erb:16
+msgid "Subjects"
+msgstr ""
+
+#: app/views/admin/usage_terms/edit.html.erb:18
+#: app/views/admin/media_sets/featured.html.haml:10
+msgid "Submit"
+msgstr ""
+
+#: app/views/admin/users/index.html.erb:27
+msgid "Switch to"
+msgstr ""
+
+#: themes/madek11/views/media_entries/edit_multiple.html.haml:9
+msgid "Tabellenansicht"
+msgstr ""
+
+#: themes/madek11/views/layouts/_footer.html.haml:6
+msgid "Terms of use"
+msgstr ""
+
+#: app/views/users/show.html.erb:23
+msgid "There aren't any more media entries"
+msgstr ""
+
+#: app/views/media_entries/_media_entry.html.erb:261
+msgid "This copy is being edited by the archival experts."
+msgstr ""
+
+#: app/views/media_entries/_favorite_link.html.erb:10
+msgid "This media entry as"
+msgstr ""
+
+#: app/views/admin/users/index.html.erb:6
+msgid "Total MediaEntries"
+msgstr ""
+
+#: app/views/admin/groups/index.html.haml:6
+msgid "Type"
+msgstr ""
+
+#: app/views/admin/contexts/edit.js.erb:1 app/views/admin/people/edit.js.erb:1
+#: app/views/admin/definitions/edit.js.erb:1
+#: app/views/admin/keys/edit.js.erb:1 app/views/admin/users/edit.js.erb:1
+#: app/views/admin/media_sets/edit.html.haml:23
+#: app/views/admin/groups/edit.js.haml:1
+msgid "Update"
+msgstr ""
+
+#: app/views/layouts/_menu.html.haml:9
+#: themes/madek11/views/layouts/_menu_bu.html.haml:8
+#: themes/madek11/views/layouts/_header.html.haml:7
+msgid "Upload"
+msgstr ""
+
+#: app/views/upload/_files.html.erb:40
+msgid "Upload OK!"
+msgstr ""
+
+#: app/views/upload/_files.html.erb:23
+msgid "Upload progress"
+msgstr ""
+
+#: app/views/upload/new.html.erb:47
+msgid "Upload these media elements"
+msgstr ""
+
+#: app/views/media_entries/_media_entry.html.erb:191
+msgid "Uploaded by"
+msgstr ""
+
+#: app/views/media_entries/_media_entry.html.erb:199
+msgid "Uploaded on/at"
+msgstr ""
+
+#: app/views/upload/_files.html.erb:72
+msgid "Uploads finished"
+msgstr ""
+
+#: app/views/layouts/admin/_menu.html.erb:38
+msgid "Usage Terms"
+msgstr ""
+
+#: app/views/admin/people/index.html.erb:5
+msgid "User"
+msgstr ""
+
+#: app/views/layouts/admin/_menu.html.erb:20
+#: app/views/admin/groups/index.html.haml:6
+msgid "Users"
+msgstr ""
+
+#: app/views/media_entries/_media_entry.html.erb:43
+msgid "Versenden"
+msgstr ""
+
+#: app/views/media_entries/_download.html.haml:10
+msgid "Version"
+msgstr ""
+
+#: app/views/upload/_files.html.erb:10
+msgid "View"
+msgstr ""
+
+#: app/views/meta_data/_bulk_edit.html.erb:43
+#: app/views/meta_data/_edit_multiple_without_form.html.erb:51
+msgid "Weitere Angaben"
+msgstr ""
+
+#: app/views/media_entries/_media_entry.html.erb:139
+msgid "Yes"
+msgstr ""
+
+#: app/controllers/authenticator/database_authentication_controller.rb:30
+msgid "You are now logged out."
+msgstr ""
+
+#: app/views/users/show.html.erb:12
+msgid "You have not uploaded any media"
+msgstr ""
+
+#: themes/madek11/views/users/show.html.haml:13
+msgid "You have not uploaded any media yet."
+msgstr ""
+
+#: app/views/media_entries/_download.html.haml:63
+msgid "ZIP-Verzeichnis mit Datei und separaten Metadaten"
+msgstr ""
+
+#: app/views/admin/keys/index.html.haml:22
+msgid "extensible list"
+msgstr ""
+
+#: app/views/layouts/_search.html.erb:11
+msgid "»"
+msgstr ""
+
+#: app/views/meta_data/_bulk_edit.html.erb:52
+msgid "Übertragen auf andere Medien"
+msgstr ""

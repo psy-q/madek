@@ -6,7 +6,7 @@
 			link_to _("Person"), "#new_person_#{n}" 
 		end
 		b += content_tag :li do
-			link_to _("Gruppe"), "#new_group_#{n}"
+			link_to _("Group"), "#new_group_#{n}"
 		end
 	end %>
 
@@ -14,20 +14,20 @@
 			a = icon_tag("icon_person")
 
 			a += content_tag :ul do
-				a = f.label :lastname, "Nachname:"
+				a = f.label :lastname, _("Last name") + ":"
 				a += f.text_field :lastname
 				a += tag :br
 
-				a += f.label :firstname, "Vorname:"
+				a += f.label :firstname, _("First name") + ":"
 				a += f.text_field :firstname
 				a += tag :br
 
-				a += f.label :pseudonym, "Pseudonym:"
+				a += f.label :pseudonym, _("Pseudonym") + ":"
 				a += f.text_field :pseudonym
 				a += tag :br
 			end
 	
-			a += f.submit _("Personendaten einfügen")
+			a += f.submit _("Insert person")
 	end %>
 
 	<%= form_for Person.new(:is_group => true), :remote => true, :html => {:id => "new_group_#{n}"} do |f|
@@ -35,12 +35,12 @@
 			a += f.hidden_field :is_group
 
 			a += content_tag :ul do
-				a = f.label :firstname, "Name:"
+				a = f.label :firstname, _("Name") + ":"
 				a += f.text_field :firstname
 				a += tag :br
 			end
 	
-			a += f.submit _("Gruppendaten einfügen")
+			a += f.submit _("Insert group")
 	end %>
 	
 <% end %>

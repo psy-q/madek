@@ -5,7 +5,7 @@
         = render :partial => '/users/user_bar'
         - if logged_in?
           %button.dark
-            = link_to _("Hochladen"), new_upload_path
+            = link_to _("Upload"), new_upload_path
             =#future# image_tag "/images/icons/arrow.png", :width => 18, :height => 15, :align => "top", :class => "arrow" unless current_user.upload_sessions.empty?
             - if false #future# unless current_user.upload_sessions.empty?
               .sub_menu

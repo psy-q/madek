@@ -5,7 +5,7 @@
 				content_tag :div, :class => "basic", :id => "search-query" do
 					content_tag :div, :style => "width: 620px; margin: 0 auto;" do
 		            	a = content_tag :label, :for => "query", :class => "query-label" do
-							_("Suche")
+							_("Search")
 						end
 						a += text_field_tag 'query', params[:query], :id => 'query', :onfocus => "this.value='';"
 						a += submit_tag _("»"), :id => 'search-submit'

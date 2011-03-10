@@ -20,12 +20,12 @@
 		- if @media_sets.any?
 			= render :partial => "media_set", :collection => @media_sets
 		- else 
-			= _("Keine Sets vorhanden")
+			= _("No sets")
 		
 		
 - unless @media_set
 	.grid_4
-		%h3= _("Neues Set erstellen")
+		%h3= _("Create new set")
 		%br
 		%br
 		- context = MetaContext.media_set
@@ -40,4 +40,4 @@
 						%td{:style => "float: left;"}
 							= field_tag(meta_datum, context)
 						%td{:style => "float: left;"}
-							= f.submit _("Erstellen")
+							= f.submit _("Create")

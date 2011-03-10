@@ -3,6 +3,14 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.5'
 gem 'i18n' # Need this explicitly, otherwise can't deploy
 
+gem 'fast_gettext' # Gettext implementation for Rails 3.0 (and faster)
+gem 'gettext_i18n_rails'
+# For finding translations
+gem 'ruby_parser'
+gem 'gettext', '>=1.9.3', :require => false, :group => :development
+
+
+
 gem 'mysql2', '0.2.6'
 gem 'memcache-client' #gem 'dalli' #gem 'redis-store'
 

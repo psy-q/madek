@@ -1,6 +1,6 @@
 <% content_for :pages do %>
 	<%= content_tag :div, :style => "padding: 5px; margin-top: 2px; text-align: center;" do
-		will_paginate @media_entries, :previous_label => _("Zurück"), :next_label => _("Weiter") unless @disabled_paginator
+		will_paginate @media_entries, :previous_label => _("Previous"), :next_label => _("Next") unless @disabled_paginator
 	end %>
 <% end %>
 
@@ -13,7 +13,7 @@
 		<% unless @media_entries.empty? %>
 			<%= render :partial => "/media_entries/media_entry_thumb", :collection => @media_entries, :as => :media_entry %>
 		<% else %>
-			<%= _("Keine Medieneinträge gefunden") %>
+			<%= _("No media entries found") %>
 		<% end
 	end %>
 

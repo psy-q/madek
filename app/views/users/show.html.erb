@@ -9,7 +9,7 @@
 				<%= link_to "Weitere >>", user_media_entries_path(current_user) %>
 			<% end if @media_entries.total_entries >= params[:per_page]
 		else %>
-			<%= _("Sie haben keine Medien hochgeladen") %>
+			<%= _("You have not uploaded any media") %>
 		<% end %>
 
 		<h2 style="border-bottom: 1px solid #d2d2d2; padding: 0.5em 0;">Weitere Medieneinträge</h2>
@@ -20,7 +20,7 @@
 				<%= link_to "Weitere >>", media_entries_path(:not_by_current_user => true) %>
 			<% end if @media_entries.total_entries >= params[:per_page]
 		else %>
-			<%= _("Es gibt keine weitere Medieneinträge") %>
+			<%= _("There aren't any more media entries") %>
 		<% end %>
 	</div>
 

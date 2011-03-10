@@ -7,20 +7,20 @@
 	c = content_tag :tr do
 		a = "".html_safe
 		a += content_tag :th, :width => "20%" do
-			_("Ansicht")
+			_("View")
 		end if false
 		a += content_tag :th, :width => "30%" do
-			_("Dateiname")
+			_("File name")
 		end
 		a += content_tag :th, :width => "30%" do
-			_("Grösse")
+			_("Size")
 		end
 		a += content_tag :th, :width => "20%" do
 			b = content_tag :span, :class => "upload_step_1", :style => "text-align: center" do
-				_("Entfernen?")
+				_("Remove?")
 			end
 			b += content_tag :span, :class => "upload_step_2" do
-				_("Uploadfortschritt")
+				_("Upload progress")
 			end
 		end
 	end
@@ -54,7 +54,7 @@
 			b = content_tag :span, :id => "total_files" do
 				@media_entries ? @media_entries.size : 0
 			end
-			b += " " + _("Dateien")
+			b += " " + _("Files")
 		end
 	 	a += content_tag :th do
 			b = content_tag :span, :id => "total_size" do
@@ -69,7 +69,7 @@
 				b = content_tag :span, :id => "uploaded_files" do
 					@media_entries ? @media_entries.size : 0
 				end
-				b += " " + _("Uploads abgeschlossen")
+				b += " " + _("Uploads finished")
 			end
 		end
 	end

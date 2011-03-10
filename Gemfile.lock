@@ -59,8 +59,13 @@ GEM
     diff-lcs (1.1.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    fast_gettext (0.5.11)
     ffi (0.6.3)
       rake (>= 0.8.7)
+    gettext (2.1.0)
+      locale (>= 2.0.5)
+    gettext_i18n_rails (0.2.17)
+      fast_gettext
     haml (3.0.25)
     highline (1.6.1)
     i18n (0.5.0)
@@ -73,6 +78,7 @@ GEM
       configuration (>= 0.0.5)
       rake (>= 0.8.1)
     linecache (0.43)
+    locale (2.0.5)
     mail (2.2.15)
       activesupport (>= 2.3.6)
       i18n (>= 0.4.0)
@@ -137,12 +143,15 @@ GEM
     ruby-debug-completion (0.2.1)
       bond (>= 0.3.3)
     ruby-net-ldap (0.0.4)
+    ruby_parser (2.0.6)
+      sexp_processor (~> 3.0)
     rubyzip (0.9.4)
     selenium-webdriver (0.1.3)
       childprocess (~> 0.1.5)
       ffi (~> 0.6.3)
       json_pure
       rubyzip
+    sexp_processor (3.0.5)
     spork (0.8.4)
     steak (1.1.0)
       rspec (>= 1.3)
@@ -174,6 +183,9 @@ DEPENDENCIES
   capistrano-ext
   capybara
   database_cleaner
+  fast_gettext
+  gettext (>= 1.9.3)
+  gettext_i18n_rails
   haml
   i18n
   jquery-rails
@@ -188,6 +200,7 @@ DEPENDENCIES
   ruby-debug
   ruby-debug-completion
   ruby-net-ldap (= 0.0.4)
+  ruby_parser
   spork
   steak
   themes_for_rails

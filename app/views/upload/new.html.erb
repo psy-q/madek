@@ -44,7 +44,7 @@
 						<p style="margin-top: 1em">Sie benutzen den Basic Uploader. Möchten Sie den <%= link_to_function _(" Multiuploader") + "", "activate_step('1')" %> ausprobieren?</p>
 						<br/>
 						<br/>
-						<%= submit_tag _("Ausgewählte Medien hochladen") + " »" %>
+						<%= submit_tag _("Upload these media elements") + " »" %>
 				<% end %>
 			<% end %>
 			
@@ -76,7 +76,7 @@
 
 
 			<%= content_tag :h3, :class => "upload_step_2" do
-				_("Zugriffsberechtigungen")
+				_("Access permissions")
 			end %>
 			<%= render :partial => "/permissions/edit_multiple_on_upload" %>
 			

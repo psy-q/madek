@@ -13,7 +13,7 @@
 		<%= content_tag :div, :id => "detail-action-bar" do
 			content_tag :ul do
 				content_tag :li do
-					link_to _("Metadaten für MIZ-Archiv editieren"), edit_tms_media_entry_path(@media_entry), :style => "line-height: 1.1em; float: none; padding: 0.5em; font-size: 0.9em;"
+					link_to _("Edit archival metadata"), edit_tms_media_entry_path(@media_entry), :style => "line-height: 1.1em; float: none; padding: 0.5em; font-size: 0.9em;"
 				end
 			end
 		end if is_expert and @media_entry.snapshotable? %>
@@ -23,7 +23,7 @@
 	<div id="detail-sidebar"  class="grid_10">
 
 		<%= content_tag :h3 do
-			_("Metadaten editieren")
+			_("Edit metadata")
 		end %>
 		<br />
 
@@ -33,8 +33,8 @@
 
 			content_for :buttons do
 				content_tag :div, :style => "text-align: right; padding: 10pt; background: #DDDDDD;" do
-					b = resource.submit _("Speichern")
-					b += link_to _("Abbrechen"), @media_entry, :class => "buttons"
+					b = resource.submit _("Save")
+					b += link_to _("Cancel"), @media_entry, :class => "buttons"
 				end
 			end
 

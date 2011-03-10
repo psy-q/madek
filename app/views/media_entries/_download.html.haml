@@ -9,14 +9,14 @@
     %tr
       %th.col1= _("Version")
       %th.col2= select_dimensions_header_for_entry(media_entry)
-      %th.col3= _("Grösse")
+      %th.col3= _("Size")
       %th.col4= _("Download")
 
     %tr.download-unit
       %td{:rowspan => 2}
         %p.download-info
-          %span= _("Datei ohne Metadaten")
-          = _("Originaldatei ohne eingeschriebene Metadaten.")
+          %span= _("File without metadata")
+          = _("Original file without metadata.")
       %td.align-right= "#{dimensions_for(original_file)} (#{format_original_file})"
       %td.align-right
         \~
@@ -38,7 +38,7 @@
     %tr.download-unit
       %td{:rowspan => 2}
         %p.download-info
-          %span= _("Datei mit aktuellen Metadaten")
+          %span= _("File with current metadata")
           = _("Die aktuellen Metadaten aus dem Medienarchiv im Format XMP/IPTC sind direkt in die Datei eingeschrieben.")
       %td.align-right= "#{dimensions_for(original_file)} (#{format_original_file})"
       %td.align-right

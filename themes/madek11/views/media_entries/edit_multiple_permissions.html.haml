@@ -32,7 +32,7 @@
                 = hidden_field_tag "subject[User][#{subject_id}][#{key}]", false
                 = check_box_tag "subject[User][#{subject_id}][#{key}]", true, (permission.last[key] == true)
             %td
-              =# link_to _("Löschen"), url_for([@resource, permission]), :remote => true, :method => :delete, :confirm => _("Sind Sie sicher?") if permission.subject and permission.subject != current_user
+              =# link_to _("Delete"), url_for([@resource, permission]), :remote => true, :method => :delete, :confirm => _("Are you sure?") if permission.subject and permission.subject != current_user
         ///
       %tbody
         %tr.adder
@@ -65,7 +65,7 @@
                 = hidden_field_tag "subject[Group][#{subject_id}][#{key}]", false
                 = check_box_tag "subject[Group][#{subject_id}][#{key}]", true, (permission.last[key] == true)
             %td
-              =# link_to _("Löschen"), url_for([@resource, permission]), :remote => true, :method => :delete, :confirm => _("Sind Sie sicher?") if permission.subject and permission.subject != current_user
+              =# link_to _("Delete"), url_for([@resource, permission]), :remote => true, :method => :delete, :confirm => _("Are you sure?") if permission.subject and permission.subject != current_user
         ///
       %tbody
         %tr.adder
@@ -87,14 +87,14 @@
         ///
         %tr
           %td
-            = _("Öffentlich")
+            = _("Public")
           - [:view, :edit, :hi_res].each do |key|
             %td{:style => (@combined_permissions[nil][key] == :mixed ? "background: url(../images/stripe_1.png);" : nil)}
               = hidden_field_tag "subject[nil][#{key}]", false
               = check_box_tag "subject[nil][#{key}]", true, (@combined_permissions[nil][key] == true)
           %td
-            =# link_to _("Löschen"), url_for([@resource, permission]), :remote => true, :method => :delete, :confirm => _("Sind Sie sicher?") if permission.subject and permission.subject != current_user
+            =# link_to _("Delete"), url_for([@resource, permission]), :remote => true, :method => :delete, :confirm => _("Are you sure?") if permission.subject and permission.subject != current_user
         ///
         
-    = submit_tag _("Speichern")
+    = submit_tag _("Delete")
     

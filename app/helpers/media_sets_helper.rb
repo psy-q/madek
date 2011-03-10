@@ -36,26 +36,26 @@ module MediaSetsHelper
       end
 
       b += content_tag :span, :style => "margin-right: 1em;" do
-        select_tag "media_set_ids[]", options_for_select({_("- Auswählen -") => nil}) + options_from_collection_for_select(current_user.editable_sets, :id, :title_and_user), :style => "width: 40%;"
+        select_tag "media_set_ids[]", options_for_select({_("- Select -") => nil}) + options_from_collection_for_select(current_user.editable_sets, :id, :title_and_user), :style => "width: 40%;"
       end
 
       b += content_tag :button, :id => "new_button" do
-            _("Neu")
+            _("New")
       end
 
       b += content_tag :span, :id => "text_media_set", :style => "display: none;" do
         c = text_field_tag nil, nil, :style => "width: 15em;"
         c += content_tag :button do
-              _("Hinzufügen")
+              _("Add")
         end
       end
 
       b += content_tag :p, :style => "margin: 1em 0 0 0" do
-        submit_tag _("Gruppierungseinstellungen speichern"), :style => "display: none;"
+        submit_tag _("Save these grouping settings"), :style => "display: none;"
       end
       
       b += content_tag :p, :style => "margin: 1em 0 0 0" do
-        link_to _("Weiter ohne Gruppierung"), root_path, :class => "buttons"
+        link_to _("Continue without grouping"), root_path, :class => "buttons"
       end if with_cancel_button
 
       b += javascript_tag do

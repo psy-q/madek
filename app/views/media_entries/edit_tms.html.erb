@@ -29,7 +29,7 @@
 	<div id="detail-sidebar"  class="grid_10">
 
 		<%= content_tag :h3 do
-			_("Metadaten für MIZ-Archiv editieren")
+			_("Edit archival metadata")
 		end %>
 		<br />
 
@@ -39,8 +39,8 @@
 
 			content_for :buttons do
 				content_tag :div, :style => "text-align: right; padding: 10pt; background: #DDDDDD;" do
-					b = resource.submit _("Speichern")
-					b += link_to _("Abbrechen"), @media_entry, :class => "buttons"
+					b = resource.submit _("Save")
+					b += link_to _("Cancel"), @media_entry, :class => "buttons"
 				end
 			end
 

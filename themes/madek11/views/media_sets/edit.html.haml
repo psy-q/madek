@@ -2,12 +2,12 @@
 
 %section#content_body
   .section_title
-    =_("Metadaten editieren")
+    =_("Edit metadata")
   = form_for @media_set, :as => :resource, :url => [:update_multiple, @media_set, :meta_data], :html => {:method => :put} do |resource|
     - content_for :buttons do
       %div{:style => "text-align: right; padding: 10pt; background: #DDDDDD;"}
-        = resource.submit _("Speichern")
-        = link_to _("Abbrechen"), @media_set, :class => "buttons"
+        = resource.submit _("Save")
+        = link_to _("Cancel"), @media_set, :class => "buttons"
         .error.required_message{:style => "display: none;"}
           = _("Bitte füllen Sie die Pflichtfelder aus (\"Titel\").")
   
