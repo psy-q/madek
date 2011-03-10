@@ -40,7 +40,7 @@ labels.delete_if {|k, v| v.size < 2 }
 					definition.meta_field.hint.to_s
 				end if definition.meta_field.hint
 				b += content_tag :div, :class => "expander" do
-					link_to icon_tag("toggler-arrow-closed") + " " + _("Weitere Angaben"), "#"
+					link_to icon_tag("toggler-arrow-closed") + " " + _("Further information"), "#"
 				end if is_parent
 				b
 			end 
@@ -49,7 +49,7 @@ labels.delete_if {|k, v| v.size < 2 }
 				b += meta_datum.hidden_field :id if meta_datum.object.id
 				b += field_tag(meta_datum, context, false, with_actions)
 				b += content_tag :span, :class => "with_actions" do
-					link_to _("Übertragen auf andere Medien"), "#", :class => "buttons"
+					link_to _("Apply to other media"), "#", :class => "buttons"
 				end if false # TODO see meta_data_helper
 				b
 			end
