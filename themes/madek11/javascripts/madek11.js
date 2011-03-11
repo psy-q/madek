@@ -74,6 +74,7 @@ function isArray(a) {
 }
 
 function checkSelected(media_set_id) {
+	//alert("checkSelected called");
 	var key = "media_sets/"+ media_set_id +"/media_entry_ids";
 	var media_entry_ids = JSON.parse(sessionStorage.getItem(key));
 	//console.log("media_entry_ids in checkSelected: " + media_entry_ids);
@@ -82,7 +83,7 @@ function checkSelected(media_set_id) {
 		$("input.editable:checkbox").each(function () {
 			if($.inArray(this.value, media_entry_ids) > -1) {
 				$(this).attr('checked', true);
-				$(this).parents('.item_box').css('background', 'rgb(238, 238, 238)');
+				$(this).parents('.item_box').css('background', '#dddddd');
 			} else {
 				// this seems necessary because of browser cache that keeps checkboxes checked
 				$(this).attr('checked', false);
