@@ -4,59 +4,62 @@
   %tbody
     %tr
       %th
-        Nachname, Vorname:
+        = _("Last name, first name") + ":"
       %th{:colspan => 2}
-        Berechtigungen:
+        = _("Permissions") + ":"
       %th
     %tr
       %td
-        %strong Einzelpersonen
+        %strong
+          = _("Individuals")
       %td
-        Sehen
+        = _("View")
       %td
-        Editieren
+        = _("Edit")
       %td
-        Volle Auflösung
+        = _("Full resolution")
   %tbody#user_permissions
     = render :partial => "/permissions/edit", :collection => @permissions.select{|x| x.subject_type == "User"}, :as => :permission
   %tbody
     %tr.adder
       %td
-        Benutzer/in hinzufügen:
+        = _("Add user")
       %td{:colspan => 4}
         %input#new_user
     %tr
       %td{:colspan => 5}
         %p{:style => "font-size: 0.9em; line-height: 2em;"}
-          Es können nur Benutzer/innen ausgewählt werden, die sich schon einmal im Medienarchiv eingeloggt haben.
+          = _("Only users that have logged into the system before can be chosen here.")
   %tbody
     %tr
       %td
-        %strong Gruppen
+        %strong
+          = _("Groups")
       %td
-        Sehen
+        = _("View")
       %td
-        Editieren
+        = _("Edit")
       %td
-        Volle Auflösung
+        = _("Full resolution")
   %tbody#group_permissions
     = render :partial => "/permissions/edit", :collection => @permissions.select{|x| x.subject_type == "Group"}, :as => :permission
   %tbody
     %tr.adder
       %td
-        Gruppe hinzufügen:
+        = _("Add group")
       %td{:colspan => 4}
         %input#new_group
   %tbody
     %tr
       %td
-        %strong Allgemein
+        %strong
+          = _("General")
       %td
-        Sehen
+        = _("View")
       %td
-        Editieren
+        = _("Edit")
       %td
-        Volle Auflösung
+        = _("Full resolution")
   %tbody#anyone_permissions
     = render :partial => "/permissions/edit", :collection => @permissions.select{|x| x.subject_type.nil?}, :as => :permission
 

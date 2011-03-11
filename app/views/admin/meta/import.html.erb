@@ -1,5 +1,5 @@
 <%= form_tag import_admin_meta_path, :multipart => true do %>
-	<label>Yaml auswählen...</label>
+	<label><%= _("Choose YAML...")%></label>
 	<%= file_field_tag "uploaded_data", :multiple => false %>
 	<br/>
 	<%= submit_tag _("Import") + " »" %>

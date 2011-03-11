@@ -275,3 +275,34 @@ _("Other people's media entries")
 
 My media entries
 Meine Medieneinträge
+
+
+
+
+
+		_("Für wen %s sichtbar?") % (@resource.is_a?(Media::Set) ? "ist dieses Set" : "sind diese Medieneinträge")
+
+
+_("For logged-in users")
+Für angemeldete Benutzer/innen
+
+
+_("Please be patient while your media entries are uploaded") 
+Bitte gedulden Sie sich einen Moment, während das Hochladen Ihrer Medien abgeschlossen wird.
+
+
+_("Please fill in the required field (\"Title\").")
+_("Bitte füllen Sie die Pflichtfelder aus (\"Titel\").")
+
+
+_("There is no metadata for this context.")
+Es sind keine Metadaten zu diesem Kontext bereit gestellt.
+
+
+_("No media entries")
+_("Keine Medieneinträge vorhanden")
+
+
+_("Drag here to remove")
+_("Hierher ziehen und loslassen, um aus dem Set zu entfernen")
+

@@ -12,12 +12,12 @@
     a += unless @media_entries.empty?
 		b = render :partial => '/media_entries/index'
 		b += content_tag :div, :id => "droppable_remove_entry_from_media_set", :style => "border: 1px dashed black; text-align: center; font-size: 1.4em; padding: 1.5em; margin: 1em 0;" do
-			_("Hierher ziehen und loslassen, um aus dem Set zu entfernen")
+			_("Drag here to remove")
 		end if can_edit
 		b
     else
 	  content_tag :h1, :style => "margin: 1em 1em;" do
-      	_("Keine Medieneinträge vorhanden")
+      	_("No media entries")
 	  end
     end
 
