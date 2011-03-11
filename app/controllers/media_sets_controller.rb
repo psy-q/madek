@@ -33,6 +33,8 @@ class MediaSetsController < ApplicationController
   def show
     #new#
     theme "madek11"
+    session[:batch_origin_uri] = nil
+    
     viewable_ids = Permission.accessible_by_user("MediaEntry", current_user)
     @editable_ids = Permission.accessible_by_user("MediaEntry", current_user, :edit)
     managable_ids = Permission.accessible_by_user("MediaEntry", current_user, :manage)
@@ -40,8 +42,8 @@ class MediaSetsController < ApplicationController
     @per_page = 32 #test# 2
     
     #ASK Franco#: Sphinx reindexing doesn't work when we remove media_entries from a set. Need to revert to active record #
-    # @media_entries = MediaEntry.search :with => {:media_set_ids => @media_set.id, :sphinx_internal_id => viewable_ids}, :page => params[:page], :per_page => per_page, :retry_stale => true
-    @media_entries =  MediaEntry.joins(:media_sets).where("media_sets.id = ?", @media_set.id).where(:id => viewable_ids).all
+    #old 1003# @media_entries = MediaEntry.search :with => {:media_set_ids => @media_set.id, :sphinx_internal_id => viewable_ids}, :page => params[:page], :per_page => per_page, :retry_stale => true
+    @media_entries =  @media_set.media_entries.where(:id => viewable_ids).all
     media_entry_ids = @media_entries.map(&:id)
     
     # for task bar
