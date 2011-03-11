@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: version 0.0.1\n"
-"POT-Creation-Date: 2011-03-10 16:47+0100\n"
+"POT-Creation-Date: 2011-03-11 11:45+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Ramón Cahenzli <rca@psy-q.ch>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,12 +28,12 @@ msgstr ""
 msgid "%s o'clock"
 msgstr "%s Uhr"
 
-#: app/helpers/media_sets_helper.rb:39
+#: app/helpers/media_sets_helper.rb:37
 msgid "- Select -"
 msgstr "- Auswählen -"
 
 #: app/views/media_sets/edit.html.erb:19
-#: themes/madek11/views/media_entries/edit_multiple.html.haml:41
+#: themes/madek11/views/media_entries/edit_multiple.html.haml:40
 msgid "Abbrechen"
 msgstr ""
 
@@ -51,7 +51,7 @@ msgstr "Zugriffsberechtigungen"
 msgid "Activities"
 msgstr "Aktivitäten"
 
-#: app/helpers/media_sets_helper.rb:49
+#: app/helpers/media_sets_helper.rb:47
 msgid "Add"
 msgstr "Hinzufügen"
 
@@ -59,12 +59,21 @@ msgstr "Hinzufügen"
 msgid "Add Key"
 msgstr "Schlüssel hinzufügen"
 
+#: app/views/permissions/_edit_multiple.html.haml:49
+msgid "Add group"
+msgstr "Gruppe hinzufügen"
+
+#: app/views/permissions/_edit_multiple.html.haml:26
+msgid "Add user"
+msgstr "Benutzer/in hinzufügen"
+
 #: app/views/users/_user_bar.html.haml:12
 #: themes/madek11/views/users/_user_bar.html.haml:12
 msgid "Admin"
 msgstr "Admin"
 
 #: app/helpers/meta_data_helper.rb:495
+#: app/views/meta_data/_bulk_edit.html.erb:52
 msgid "Apply to other media"
 msgstr "Übertragen auf andere Medien"
 
@@ -88,27 +97,22 @@ msgstr "Archivkopie"
 msgid "Are you sure?"
 msgstr "Sind Sie sicher?"
 
-#: app/views/upload/new.html.erb:72
-msgid "Ausgewählte Medien hochladen"
-msgstr ""
-
 #: app/views/layouts/admin/_menu.html.erb:32
 msgid "Ausgewählte Sets"
 msgstr ""
 
 #: themes/madek11/views/groups/edit.html.haml:42
 msgid "Back to my groups"
-msgstr ""
+msgstr "Zurück zu meinen Gruppen"
 
 #: themes/madek11/views/groups/new.html.haml:15
 msgid "Back to the groups"
-msgstr ""
+msgstr "Zurück zu den Gruppen"
 
 #: app/views/upload/new.html.erb:56
 msgid "Basic Uploader"
 msgstr "Basic Uploader"
 
-#: app/views/media_sets/edit.html.erb:21
 #: themes/madek11/views/media_sets/edit.html.haml:12
 msgid "Bitte füllen Sie die Pflichtfelder aus (\"Titel\")."
 msgstr ""
@@ -129,11 +133,15 @@ msgstr "Abbrechen"
 msgid "Change permissions"
 msgstr "Berechtigungen ändern"
 
+#: app/views/admin/meta/import.html.erb:2
+msgid "Choose YAML..."
+msgstr "YAML wählen..."
+
 #: app/views/layouts/admin/_menu.html.erb:10
 msgid "Contexts"
 msgstr "Kontexte"
 
-#: app/helpers/media_sets_helper.rb:58
+#: app/helpers/media_sets_helper.rb:56
 msgid "Continue without grouping"
 msgstr "Weiter ohne Gruppierung"
 
@@ -166,6 +174,10 @@ msgstr "Neues Set erstellen"
 msgid "Create permissions"
 msgstr "Zugriffsberechtigungen erstellen"
 
+#: app/views/permissions/_edit_multiple_on_upload.html.erb:33
+msgid "Currently only visible inside, but later also outside the university"
+msgstr "Momentan nur innerhalb, später aber auch ausserhalb der Hochschule sichtbar"
+
 #: app/views/media_entries/_download.html.haml:64
 msgid "Das gezippte Verzeichnis enthält die Datei mit eingeschriebenen, aktuellen Metadaten sowie einem separaten XML und YAML Metadatendokument"
 msgstr ""
@@ -188,7 +200,6 @@ msgstr ""
 #: app/views/permissions/_edit.html.haml:19
 #: themes/madek11/views/groups/_user.html.haml:3
 #: themes/madek11/views/groups/index.html.haml:14
-#: themes/madek11/views/media_entries/edit_multiple_permissions.html.haml:99
 msgid "Delete"
 msgstr "Löschen"
 
@@ -212,10 +223,6 @@ msgstr "Beschreibung von (vor dem Upload)"
 msgid "Die aktuellen Metadaten aus dem Medienarchiv im Format XMP/IPTC sind direkt in die Datei eingeschrieben."
 msgstr ""
 
-#: app/views/media_entries/edit_tms.html.erb:22
-msgid "Diese Kopie wird gegenwärtig durch das MIZ-Archiv bearbeitet."
-msgstr ""
-
 #: app/views/media_entries/_media_entry.html.erb:47
 #: app/views/media_entries/_download.html.haml:13
 #: app/views/media_entries/_download.html.haml:25
@@ -229,6 +236,10 @@ msgstr ""
 msgid "Download"
 msgstr "Download"
 
+#: app/views/media_sets/show.html.erb:15
+msgid "Drag here to remove"
+msgstr "Hierhin ziehen, um zu entfernen"
+
 #: app/views/meta_data/_show.html.erb:8
 #: app/views/admin/people/index.html.erb:19
 #: app/views/admin/usage_terms/show.html.erb:16
@@ -239,6 +250,9 @@ msgstr "Download"
 #: app/views/admin/definitions/index.html.haml:13
 #: app/views/admin/definitions/index.html.haml:48
 #: app/views/admin/keys/index.html.haml:30
+#: app/views/permissions/_edit_multiple.html.haml:18
+#: app/views/permissions/_edit_multiple.html.haml:41
+#: app/views/permissions/_edit_multiple.html.haml:60
 #: themes/madek11/views/groups/index.html.haml:13
 msgid "Edit"
 msgstr "Editieren"
@@ -268,14 +282,6 @@ msgstr "Grösse"
 msgid "Email"
 msgstr "E-Mail"
 
-#: app/views/meta_data/index.html.erb:4
-msgid "Es sind keine Metadaten zu diesem Kontext bereit gestellt."
-msgstr ""
-
-#: app/views/upload/_files.html.erb:48
-msgid "Es wurden noch keine Medien ausgewählt."
-msgstr "You have not selected any media yet."
-
 #: app/views/layouts/admin/main.html.erb:84
 msgid "Export"
 msgstr "Exportieren"
@@ -292,7 +298,7 @@ msgstr "ZIP exportieren"
 msgid "Favorites"
 msgstr "Favoriten"
 
-#: app/views/layouts/_menu.html.haml:24
+#: app/views/layouts/_menu.html.haml:23
 #: themes/madek11/views/layouts/_menu_bu.html.haml:23
 #: themes/madek11/views/layouts/_header.html.haml:15
 msgid "Feedback"
@@ -322,17 +328,28 @@ msgstr "Vorname"
 msgid "Firstname"
 msgstr "Vorname"
 
+#: app/views/permissions/_edit_multiple_on_upload.html.erb:25
+msgid "For logged-in users"
+msgstr "Für eingeloggte Benutzer"
+
 #: app/views/admin/definitions/index.html.haml:11
 msgid "For user interface"
 msgstr "Für Benutzerinterface"
 
+#: app/views/permissions/_edit_multiple.html.haml:20
+#: app/views/permissions/_edit_multiple.html.haml:43
+#: app/views/permissions/_edit_multiple.html.haml:62
+msgid "Full resolution"
+msgstr "Volle Auflösung"
+
+#: app/views/meta_data/_bulk_edit.html.erb:43
 #: app/views/media_entries/_media_entry.html.erb:175
 msgid "Further information"
 msgstr "Weitere Informationen"
 
-#: app/views/permissions/_edit_multiple_on_upload.html.erb:17
-msgid "Für wen %s sichtbar?"
-msgstr ""
+#: app/views/permissions/_edit_multiple.html.haml:56
+msgid "General"
+msgstr "Allgemein"
 
 #: app/views/people/new.html.erb:9
 #: app/views/media_entries/_media_entry.html.erb:63
@@ -341,12 +358,9 @@ msgstr "Gruppe"
 
 #: app/views/layouts/admin/_menu.html.erb:22
 #: app/views/admin/users/index.html.erb:7
+#: app/views/permissions/_edit_multiple.html.haml:37
 msgid "Groups"
 msgstr "Gruppen"
-
-#: app/views/media_sets/show.html.erb:15
-msgid "Hierher ziehen und loslassen, um aus dem Set zu entfernen"
-msgstr ""
 
 #: app/views/layouts/admin/main.html.erb:86
 #: app/views/admin/media_entries/import.html.erb:4
@@ -366,6 +380,10 @@ msgstr "Import fehlgeschlagen"
 msgid "Importer"
 msgstr "Importer"
 
+#: app/views/permissions/_edit_multiple.html.haml:14
+msgid "Individuals"
+msgstr "Personen"
+
 #: app/views/people/new.html.erb:43
 msgid "Insert group"
 msgstr "Gruppe hinzufügen"
@@ -378,10 +396,6 @@ msgstr "Person hinzufügen"
 msgid "Invalid username/password"
 msgstr "Ungültiger Benutzername/Passwort"
 
-#: app/views/media_sets/show.html.erb:20
-msgid "Keine Medieneinträge vorhanden"
-msgstr ""
-
 #: app/views/layouts/admin/_menu.html.erb:9
 msgid "Keys"
 msgstr "Schlüssel"
@@ -389,6 +403,10 @@ msgstr "Schlüssel"
 #: app/views/people/new.html.erb:17
 msgid "Last name"
 msgstr "Nachname"
+
+#: app/views/permissions/_edit_multiple.html.haml:7
+msgid "Last name, first name"
+msgstr "Nachname, Vorname"
 
 #: app/views/media_entries/_media_entry.html.erb:205
 msgid "Last update"
@@ -502,7 +520,7 @@ msgstr "Keine Sets"
 msgid "Name"
 msgstr "Name"
 
-#: app/helpers/media_sets_helper.rb:43
+#: app/helpers/media_sets_helper.rb:41
 msgid "New"
 msgstr "Neu"
 
@@ -531,6 +549,7 @@ msgstr "Nein"
 msgid "No further media entries."
 msgstr "Keine weiteren Medieneinträge"
 
+#: app/views/media_sets/show.html.erb:20
 #: app/views/media_sets/_media_set.html.haml:14
 msgid "No media entries"
 msgstr "Keine Medieneinträge"
@@ -539,13 +558,21 @@ msgstr "Keine Medieneinträge"
 msgid "No media entries found"
 msgstr "Keine Medieneinträge gefunden"
 
+#: app/views/upload/_files.html.erb:48
+msgid "No media selected yet."
+msgstr "Keine Medieneinträge ausgewählt."
+
 #: app/views/media_sets/index.html.haml:23
 msgid "No sets"
 msgstr "Keine Sets"
 
-#: app/views/layouts/_footer.html.erb:3
-msgid "Nutzungsbedingungen"
-msgstr ""
+#: app/views/permissions/_edit_multiple_on_upload.html.erb:22
+msgid "Only for you"
+msgstr "Nur für Sie"
+
+#: app/views/permissions/_edit_multiple.html.haml:32
+msgid "Only users that have logged into the system before can be chosen here."
+msgstr "Hier werden nur Benutzer/innen angezeigt, die sich schon einmal ins System eingeloggt haben."
 
 #: app/views/media_entries/_download.html.haml:19
 msgid "Original file without metadata."
@@ -567,9 +594,21 @@ msgstr "Leute"
 msgid "Permission"
 msgstr "Berechtigung"
 
+#: app/views/permissions/_edit_multiple.html.haml:9
+msgid "Permissions"
+msgstr "Berechtigungen"
+
 #: app/views/people/new.html.erb:6
 msgid "Person"
 msgstr "Person"
+
+#: app/views/permissions/_edit_multiple_on_upload.html.erb:50
+msgid "Please be patient while your media entries are uploaded"
+msgstr "Bitte gedulden Sie sich einen Moment, während die Medieneinträge hochgeladen werden"
+
+#: app/views/media_sets/edit.html.erb:21
+msgid "Please fill in the required field (\"Title\")."
+msgstr "Bitte füllen Sie das Pflichtfeld \"Titel\" aus."
 
 #: app/views/upload/edit.html.erb:99
 msgid "Please fill in the required fields (\"Title\" and \"Copyright\")."
@@ -589,6 +628,7 @@ msgstr "Zurück"
 msgid "Pseudonym"
 msgstr "Pseudonym"
 
+#: app/views/permissions/_edit_multiple_on_upload.html.erb:33
 #: themes/madek11/views/media_entries/edit_multiple_permissions.html.haml:90
 msgid "Public"
 msgstr "Öffentlich"
@@ -625,6 +665,7 @@ msgstr "Ressourcen"
 #: app/views/media_entries/edit.html.erb:36
 #: app/views/snapshots/show.html.erb:42
 #: themes/madek11/views/media_sets/edit.html.haml:9
+#: themes/madek11/views/media_entries/edit_multiple_permissions.html.haml:99
 msgid "Save"
 msgstr "Speichern"
 
@@ -644,7 +685,7 @@ msgstr "Einstellungen speichern"
 msgid "Save settings and continue"
 msgstr "Einstellungen speichern und weiter"
 
-#: app/helpers/media_sets_helper.rb:54
+#: app/helpers/media_sets_helper.rb:52
 msgid "Save these grouping settings"
 msgstr "Gruppierungseinstellungen speichern"
 
@@ -656,7 +697,7 @@ msgstr "Suchen"
 msgid "Set Inhalt"
 msgstr ""
 
-#: app/helpers/media_sets_helper.rb:35
+#: app/helpers/media_sets_helper.rb:33
 #: app/views/layouts/admin/_menu.html.erb:33
 msgid "Sets"
 msgstr "Sets"
@@ -680,7 +721,7 @@ msgid "Size"
 msgstr "Grösse"
 
 #: app/views/media_sets/edit.html.erb:18
-#: themes/madek11/views/media_entries/edit_multiple.html.haml:40
+#: themes/madek11/views/media_entries/edit_multiple.html.haml:41
 msgid "Speichern"
 msgstr ""
 
@@ -701,6 +742,7 @@ msgstr "Wechseln zu"
 msgid "Tabellenansicht"
 msgstr ""
 
+#: app/views/layouts/_footer.html.erb:3
 #: themes/madek11/views/layouts/_footer.html.haml:6
 msgid "Terms of use"
 msgstr "Nutzungsbedingungen"
@@ -708,6 +750,14 @@ msgstr "Nutzungsbedingungen"
 #: app/views/users/show.html.erb:23
 msgid "There aren't any more media entries"
 msgstr "Es gibt keine weitere Medieneinträge"
+
+#: app/views/meta_data/index.html.erb:4
+msgid "There is no metadata for this context."
+msgstr "Es gibt keine Metadaten für diesen Kontext."
+
+#: app/views/media_entries/edit_tms.html.erb:22
+msgid "This copy is being edited by an archival expert."
+msgstr "Diese Kopie wird gegenwärtig durch das Archivierungspersonal bearbeitet."
 
 #: app/views/media_entries/_media_entry.html.erb:261
 msgid "This copy is being edited by the archival experts."
@@ -735,7 +785,7 @@ msgstr "Typ"
 msgid "Update"
 msgstr "Aktualisieren"
 
-#: app/views/layouts/_menu.html.haml:9
+#: app/views/layouts/_menu.html.haml:8
 #: themes/madek11/views/layouts/_menu_bu.html.haml:8
 #: themes/madek11/views/layouts/_header.html.haml:7
 msgid "Upload"
@@ -745,11 +795,16 @@ msgstr "Upload"
 msgid "Upload OK!"
 msgstr "Upload OK!"
 
+#: app/views/permissions/_edit_multiple_on_upload.html.erb:48
+msgid "Upload in progress"
+msgstr "Upload im Gange"
+
 #: app/views/upload/_files.html.erb:23
 msgid "Upload progress"
 msgstr "Uploadfortschritt"
 
 #: app/views/upload/new.html.erb:47
+#: app/views/upload/new.html.erb:72
 msgid "Upload these media elements"
 msgstr "Ausgewählte Medien hochladen"
 
@@ -787,13 +842,23 @@ msgid "Version"
 msgstr "Version"
 
 #: app/views/upload/_files.html.erb:10
+#: app/views/permissions/_edit_multiple.html.haml:16
+#: app/views/permissions/_edit_multiple.html.haml:39
+#: app/views/permissions/_edit_multiple.html.haml:58
 msgid "View"
 msgstr "Ansicht"
 
-#: app/views/meta_data/_bulk_edit.html.erb:43
+#: app/views/permissions/_edit_multiple_on_upload.html.erb:25
+msgid "Visible for logged-in users"
+msgstr "Sichtbar für eingeloggte Benutzer"
+
 #: app/views/meta_data/_edit_multiple_without_form.html.erb:51
 msgid "Weitere Angaben"
 msgstr ""
+
+#: app/views/permissions/_edit_multiple_on_upload.html.erb:17
+msgid "Who %s visible for?"
+msgstr "Für wen %s sichtbar."
 
 #: app/views/media_entries/_media_entry.html.erb:139
 msgid "Yes"
@@ -815,15 +880,34 @@ msgstr "Sie haben noch keine Medien hochgeladen."
 msgid "ZIP-Verzeichnis mit Datei und separaten Metadaten"
 msgstr ""
 
+#: app/views/permissions/_edit_multiple_on_upload.html.erb:36
+msgid "and editable by all users"
+msgstr "und für alle editierbar"
+
+#: app/views/permissions/_edit_multiple_on_upload.html.erb:28
+msgid "and editable by logged in users."
+msgstr "und editierbar für angemeldete Benutzer."
+
+#: app/views/permissions/_edit_multiple_on_upload.html.erb:17
+msgid "are these media entries"
+msgstr "sind diese Medieneinträge"
+
 #: app/views/admin/keys/index.html.haml:22
 msgid "extensible list"
 msgstr "erweiterbare Liste"
 
+#: app/views/permissions/_edit_multiple_on_upload.html.erb:17
+msgid "is this set"
+msgstr "ist dieses Set"
+
+#: app/views/permissions/_edit_multiple_on_upload.html.erb:22
+msgid "only visible for you"
+msgstr "nur für Sie sichtbar"
+
 #: app/views/layouts/_search.html.erb:11
 msgid "»"
-msgstr ""
+msgstr "»"
 
-#: app/views/meta_data/_bulk_edit.html.erb:52
-msgid "Übertragen auf andere Medien"
-msgstr ""
+#~ msgid "Es wurden noch keine Medien ausgewählt."
+#~ msgstr "You have not selected any media yet."
 
