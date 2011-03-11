@@ -19,7 +19,7 @@
 			end unless @media_entry.snapshots.empty?
 
 			a += content_tag :div, :style => "font-size: 0.9em;", :class => "notice" do
-				_("Diese Kopie wird gegenwärtig durch das MIZ-Archiv bearbeitet.")
+				_("This copy is being edited by an archival expert.")
 			end unless @media_entry.snapshotable?
 			a
 		end %>
